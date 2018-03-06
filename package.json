@@ -1,6 +1,6 @@
 {
-  "name": "coffe_machine_app",
-  "description": "projet campus",
+  "name": "coffee_app",
+  "description": "A Vue.js project",
   "author": "thomas",
   "private": true,
   "scripts": {

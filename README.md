@@ -1,6 +1,6 @@
-# coffe_machine_app
+# coffee_app
 
-> projet campus
+> A Vue.js project
 
 ## Build Setup
 
