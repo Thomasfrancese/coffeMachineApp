@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>Machine {{name}}</h1>
+  <div class="container">
+    <h1>{{name}}</h1>
     <h3 class="on" v-if="status">Status ON</h3>
     <h3 class="off" v-else>Status OFF</h3>
     <h5>Last time checked : {{checkedAt}}</h5>
@@ -11,11 +11,9 @@
 <script>
   export default {
     name: 'machine',
+    props: ['name', 'status', 'checkedAt'],
     data() {
       return {
-        name: 'What else ?',
-        status: false,
-        checkedAt: new Date().toLocaleDateString()
       };
     }
   };
@@ -28,5 +26,15 @@
 
   .off {
     color : red;
+  }
+
+  div{
+    margin-bottom: 5px;
+    padding: 10px;
+    border: black solid 1px;
+
+  }
+  div:hover{
+    background-color: beige;
   }
 </style>

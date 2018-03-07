@@ -4,12 +4,12 @@
     <h1>{{ msg }}</h1>
     <h2>Que voulez vous faire?</h2>
     <div class="menu">
-      <router-link to="/machinelist"><button>Consultez la liste des machines</button></router-link>
-      <router-link to="/machinemap"><button>carte des machines</button></router-link>
-      <router-link to="/machine"><button>Etat</button></router-link>
+      <router-link to="/machines"><button type="button" class="btn btn-success">Consultez la liste des machines</button></router-link>
+      <router-link to="/machinemap"><button type="button" class="btn btn-success">carte des machines</button></router-link>
+      <!--<router-link to="/machine"><button>Etat</button></router-link>-->
 
     </div>
-    <router-view> </router-view>
+    <router-view></router-view>
   </div>
 </template>
 

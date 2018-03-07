@@ -12,7 +12,7 @@ import Machine from './Machine.vue';
 Vue.use(VueRouter);
 
 const routes = [
-  {path: '/machinelist', component: List},
+  {path: '/machines', component: List},
   {path: '/machinemap', component: Mapping},
   {path: '/machine', component: Machine}
 ];
