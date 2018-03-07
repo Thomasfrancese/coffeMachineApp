@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="src/assets/index.png">
+    <router-link to="./"><img class="img" src="src/assets/index.png"></router-link>
     <h1>{{ msg }}</h1>
     <h2>Que voulez vous faire?</h2>
     <div class="menu">
@@ -71,4 +71,5 @@
     margin-top    : 30px;
     margin-bottom : 20px;
   }
+
 </style>

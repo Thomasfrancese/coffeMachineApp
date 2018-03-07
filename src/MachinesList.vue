@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Liste des machines</h1>
+    <h2>Liste des machines</h2>
     <machine class="machinestyle" v-for="machine in machines"
              v-bind:key="machine.id"
              v-bind:name="machine.name"

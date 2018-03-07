@@ -31,10 +31,11 @@
   div{
     margin-bottom: 5px;
     padding: 10px;
+    border-radius: 15px 15px 15px;
     border: black solid 1px;
 
   }
   div:hover{
-    background-color: beige;
+    background-color: ghostwhite;
   }
 </style>
