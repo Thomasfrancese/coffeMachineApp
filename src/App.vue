@@ -4,15 +4,12 @@
     <h1>{{ msg }}</h1>
     <h2>Que voulez vous faire?</h2>
     <div class="menu">
-      <!--<button type="button" class="btn btn-primary" href="#" @click="onMachinesListClick">Consultez la liste-->
-      <!--des machines-->
-      <!--</button>-->
-      <!--<button type="button" class="btn btn-primary" href="#" @click="onMapClick">Afficher la carte</button></br>-->
-      <router-link to="/machinelist">Consultez la liste des machines</router-link>
-      <router-link to="/machinemap">carte des machines</router-link>
+      <router-link to="/machinelist"><button>Consultez la liste des machines</button></router-link>
+      <router-link to="/machinemap"><button>carte des machines</button></router-link>
+      <router-link to="/machine"><button>Etat</button></router-link>
 
     </div>
-    <router-view></router-view>
+    <router-view> </router-view>
   </div>
 </template>
 
