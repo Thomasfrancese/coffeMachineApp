@@ -1,14 +1,28 @@
 import Vue from 'vue';
+import VueRouter from 'vue-router';
+
 import App from './App.vue';
 import List from './MachinesList.vue';
 import Mapping from './MachinesMap.vue';
 
-// faire nouveau composant
-Vue.component('list', List);
-Vue.component('mapping', Mapping);
+//Vue.component('list', List);
+//Vue.component('mapping', Mapping);
 
-new Vue({
-            el: '#app',
-            render: h => h(App)
-        });
+Vue.use(VueRouter);
+
+const routes = [
+  {path: '/machinelist', component: List},
+  {path: '/machinemap', component: Mapping}
+];
+
+const router = new VueRouter({
+       routes
+  });
+
+new Vue(
+  {
+    el: '#app',
+    render: h => h(App),
+    router,
+  });
 

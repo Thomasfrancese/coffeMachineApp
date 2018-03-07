@@ -4,6 +4,5 @@
 <script>
     export default {
         name: 'mapping',
-        props: ['Mapping'],
     };
 </script>

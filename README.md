@@ -1,4 +1,4 @@
-# coffee_app
+# coffee-machine
 
 > A Vue.js project
 
@@ -15,4 +15,4 @@ npm run dev
 npm run build
 ```
 
-For more information see the [docs for vueify](https://github.com/vuejs/vueify).
+For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
