@@ -1,36 +1,36 @@
 <template>
   <div id="app">
     <router-link to="./"><img class="img" src="src/assets/index.png"></router-link>
-    <h1>{{ msg }}</h1>
+    <h1>{{msg}}</h1>
     <h2>Que voulez vous faire?</h2>
     <div class="menu">
-      <router-link to="/machines"><button type="button" class="btn btn-success">Consultez la liste des machines</button></router-link>
-      <router-link to="/machinemap"><button type="button" class="btn btn-success">carte des machines</button></router-link>
-      <!--<router-link to="/machine"><button>Etat</button></router-link>-->
+      <router-link to="/machines">
+        <button type="button" class="btn btn-success">Consultez la liste des machines</button>
+      </router-link>
+      <router-link to="/machinemap">
+        <button type="button" class="btn btn-success">carte des machines</button>
+      </router-link>
+      <router-link to="/test">
+        <button type="button" class="btn btn-success">Test</button>
+      </router-link>
 
     </div>
     <router-view></router-view>
+<test color="red"></test>
+
   </div>
 </template>
 
 <script>
   export default {
-    // component: {List},
     name: 'app',
+    props: ['color'],
     data() {
       return {
-        msg: 'Bienvenue'
+        msg: 'Bienvenue',
+        message: ''
       };
-    },
-    // methods: {
-    //   onMachinesListClick() {
-    //     window.alert('Tu as cliqué sur la liste des machines');
-    //   },
-    //
-    //   onMapClick() {
-    //     window.alert('Tu as cliqué sur affiché la map');
-    //   }
-    // }
+    }
   };
 </script>
 

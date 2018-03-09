@@ -10,24 +10,28 @@
       <gmap-marker v-for="machine in machines"
                    v-bind:key="machine.id"
                    v-bind:position="machine.position">
- </gmap-marker>
+      </gmap-marker>
     </gmap-map>
   </div>
 </template>
 
 <script>
+
   export default {
     name: 'mapping',
+
     data() {
       return {
         machines: [{
-          id: 1,
-          position:{lat:10, lng:10},
-        },
-          {
-            id: 2,
-            position:{lat:12, lng:9},
-          }]
+          loading: false,
+          error: null
+          // id: 1,
+          //   position: {lat: 10, lng: 10}
+          // },
+          //   {
+          //     id: 2,
+          //     position: {lat: 12, lng: 9}
+        }]
       };
     }
   };
