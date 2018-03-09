@@ -16,7 +16,6 @@
 
     </div>
     <router-view></router-view>
-<test color="red"></test>
 
   </div>
 </template>
